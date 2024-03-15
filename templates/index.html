@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<html lang="en" xmlns="http://www.w3.org/1999/html">-->
+<head>
+    <meta charset="UTF-8">
+<!--    <title> Mumbai Visit </title>-->
+    <style>
+    body {background-color: powderblue;}
+    h1   {color: black;}
+    p    {color: red;}
+    .myDiv {
+    border: 2px outset black;
+    background-color: Yellow;
+    text-align: center;
+    background-image: url('https://media.istockphoto.com/vectors/blue-abstract-geometric-dynamic-shape-paper-layers-subtle-background-vector-id1284691550?k=20&m=1284691550&s=612x612&w=0&h=M_gHdREUJ4UwnL4G5jrrO1jtat9pLDiv1ErqwxuQgLE=');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+</style>
+</head>
+
+<body style="colour=#FF00FF" align="center">
+<h2 style="color:royalblue"> Mumbai visit project  </h2>
+
+<div class="myDiv" style="colo">
+<h4><b>This project made by </b> </h4>
+<h3>
+    <div style="display:flex; justify-content:center; gap: 1em;">
+       <div>
+           <img src="{{url_for('static', filename='lax.jpg')}}" width="210" height="128" />
+
+           <p style="color:black"> Laxman Parihar</p>
+       </div>
+        <div>
+           <img src="{{url_for('static', filename='aditi.jpg')}}" width="210" height="128" />
+            <p style="color:black">Aditi Gawande</p>
+       </div>
+        <div>
+           <img src="{{url_for('static', filename='chetna.jpeg')}}" width="210" height="128" />
+            <p style="color:black">Chetana</p>
+       </div>
+        <div>
+           <img src="{{url_for('static', filename='ammu.jpeg')}}" width="210" height="128" />
+            <p style="color:black">Ammu Shriram </p>
+       </div>
+   </div>
+</h3>
+<footer style="background-color:#FF00FF">
+<button class="button button1"><a href="/home" class="w3-button w3-bar-item">Home</a></button>
+<button class="button button2"><a href="/index" class="w3-button w3-bar-item">Index</a></button>
+
+    <button class="button button3"><a href="/userdetails" class="w3-button w3-bar-item">Visitor Details</a></button>
+    </footer>
+</div>
+</body>
+
+</html>

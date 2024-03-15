@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <style>
+  body {background-color: powderblue;}
+    h1   {color: black;}
+    p    {color: red;}
+  .myDiv{
+  border: 2px outset tomato;
+  background-color: Yellow;
+  text-align: center;
+  background-image: url('https://media.istockphoto.com/vectors/blue-abstract-geometric-dynamic-shape-paper-layers-subtle-background-vector-id1284691550?k=20&m=1284691550&s=612x612&w=0&h=M_gHdREUJ4UwnL4G5jrrO1jtat9pLDiv1ErqwxuQgLE=');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    .button {
+  border: 2px;
+  color: red;
+  padding: 12px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 80px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+    .button1:hover {
+    background-color: #808000;
+    color: gray;
+    border: 2px solid #0000FF;
+}
+    .button2:hover {
+    background-color: green;
+    color: white;
+    border: 2px solid #00FF00;
+}
+    .button3:hover {
+    background-color: yellow;
+    color: yellow;
+    border: 2px solid #FFFF00;
+}
+    .button4:hover {
+    background-color: red;
+    color: yellow;
+    border: 2px solid #FFFF00;
+}
+</style>
+</head>
+<body>
+<div class="myDiv">
+<!--open tag of Div!-->
+    <caption>
+        <h1 style="color:red">Visitor Details</h1>
+    </caption>
+    <h1 style="color:MediumSeaGreen"></h1>
+  <table border=1 style="width:50%"align="center">
+  <tr>
+    <th>Visitor id</th>
+    <th>Visitor Name</th>
+    <th>Visitor Email</th>
+    <th>Visitor Phone Number</th>
+    <th>Visit date</th>
+</tr>
+  {% for user in userDetail %}
+  <tr align="center">
+    <td>
+      {{user[0]}}
+    </td>
+    <td>
+      {{user[1]}}
+    </td>
+    <td>
+      {{user[2]}}
+    </td>
+    <td>
+      {{user[3]}}
+    </td>
+    <td>
+      {{user[4]}}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<footer style="background-color:#FF00FF" >
+  <button class="button button1" ><a href="/home" class="w3-button w3-bar-item">Home</a></button>
+<button class="button button2"><a href="/index" class="w3-button w3-bar-item">Index</a></button>
+    <button class="button button3"><a href="/userdetails" class="w3-button w3-bar-item">Visitor Details</a></button>
+<button class="button button2" ><a href="/form" class="w3-button w3-bar-item">Register</a></button>
+<button class="button button4"><a href="/delete" class="w3-button w3-bar-item">delete</a></button>
+    <button class="button button3"><a href="/update" class="w3-button w3-bar-item">update</a></button>
+
+</footer>
+</div>
+</body>
+</html>
